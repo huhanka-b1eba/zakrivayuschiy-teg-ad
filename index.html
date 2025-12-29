@@ -1,18 +1,596 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-  </head>
-  <body class="page">
-    <header class="header"></header>
-    <main></main>
-    <script src="./scripts/like.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+  />
+  <title>Закрывающий тег</title>
+
+  <!-- Шрифты -->
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+
+  <!-- Переменные -->
+  <link rel="stylesheet" href="./styles/variables.css" />
+
+  <!-- Глобальные стили -->
+  <link rel="stylesheet" href="./styles/globals.css" />
+
+  <!-- Основные стили -->
+  <link rel="stylesheet" href="./styles/style.css" />
+
+  <!-- Анимации -->
+  <link rel="stylesheet" href="./styles/animations.css" />
+</head>
+
+<body class="page">
+<!-- ===== HEADER ===== -->
+<header class="header header_width">
+  <h1 class="header__logo">&lt;/&gt;</h1>
+  <p class="header__title">Закрывающий тег</p>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main class="content content_width">
+  <section class="cards">
+    <!-- ===== CARD 1 ===== -->
+    <article class="card">
+      <div class="card__image-wrapper">
+        <span class="card__label">Старт</span>
+        <img
+                src="./images/card-1.jpg"
+                alt="Начало обучения"
+                class="card__image card__image--blur"
+                loading="lazy"
+        />
+      </div>
+
+      <div class="card__content">
+        <h2 class="card__title">Первый шаг</h2>
+        <p class="card__text">
+          Было страшно начинать, но любопытство оказалось сильнее.
+        </p>
+
+        <div class="card__actions">
+          <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-label="Поставить лайк"
+          >
+            <!-- SVG сердца — INLINE, обязательно -->
+            <svg
+                    class="like-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                        class="core"
+                        fill="none"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+                <path
+                        class="main-body"
+                        fill="none"
+                        d="M12 20s-6-4-8.5-6.8C1.8 11.3 2.2 8.7 4.3 7.6c1.5-.8 3.6-.3 4.7 1.1l1 1.3 1-1.3c1.1-1.4 3.2-1.9 4.7-1.1 2.1 1.1 2.5 3.7.8 5.6C18 16 12 20 12 20z"
+                />
+                <path
+                        class="contour"
+                        fill="var(--contour-color)"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+              </g>
+
+              <path
+                      class="sparks"
+                      fill="var(--animation-fill-color)"
+                      d="M2 2l2 2M20 2l-2 2M2 20l2-2M20 20l-2-2"
+              />
+            </svg>
+          </button>
+
+          <button
+                  type="button"
+                  class="card__like-button"
+          >
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__image-wrapper">
+        <span class="card__label">Старт</span>
+        <img
+                src="./images/card-1.jpg"
+                alt="Начало обучения"
+                class="card__image card__image--blur"
+                loading="lazy"
+        />
+      </div>
+
+      <div class="card__content">
+        <h2 class="card__title">Первый шаг</h2>
+        <p class="card__text">
+          Было страшно начинать, но любопытство оказалось сильнее.
+        </p>
+
+        <div class="card__actions">
+          <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-label="Поставить лайк"
+          >
+            <!-- SVG сердца — INLINE, обязательно -->
+            <svg
+                    class="like-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                        class="core"
+                        fill="none"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+                <path
+                        class="main-body"
+                        fill="none"
+                        d="M12 20s-6-4-8.5-6.8C1.8 11.3 2.2 8.7 4.3 7.6c1.5-.8 3.6-.3 4.7 1.1l1 1.3 1-1.3c1.1-1.4 3.2-1.9 4.7-1.1 2.1 1.1 2.5 3.7.8 5.6C18 16 12 20 12 20z"
+                />
+                <path
+                        class="contour"
+                        fill="var(--contour-color)"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+              </g>
+
+              <path
+                      class="sparks"
+                      fill="var(--animation-fill-color)"
+                      d="M2 2l2 2M20 2l-2 2M2 20l2-2M20 20l-2-2"
+              />
+            </svg>
+          </button>
+
+          <button
+                  type="button"
+                  class="card__like-button"
+          >
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__image-wrapper">
+        <span class="card__label">Старт</span>
+        <img
+                src="./images/card-1.jpg"
+                alt="Начало обучения"
+                class="card__image card__image--blur"
+                loading="lazy"
+        />
+      </div>
+
+      <div class="card__content">
+        <h2 class="card__title">Первый шаг</h2>
+        <p class="card__text">
+          Было страшно начинать, но любопытство оказалось сильнее.
+        </p>
+
+        <div class="card__actions">
+          <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-label="Поставить лайк"
+          >
+            <!-- SVG сердца — INLINE, обязательно -->
+            <svg
+                    class="like-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                        class="core"
+                        fill="none"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+                <path
+                        class="main-body"
+                        fill="none"
+                        d="M12 20s-6-4-8.5-6.8C1.8 11.3 2.2 8.7 4.3 7.6c1.5-.8 3.6-.3 4.7 1.1l1 1.3 1-1.3c1.1-1.4 3.2-1.9 4.7-1.1 2.1 1.1 2.5 3.7.8 5.6C18 16 12 20 12 20z"
+                />
+                <path
+                        class="contour"
+                        fill="var(--contour-color)"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+              </g>
+
+              <path
+                      class="sparks"
+                      fill="var(--animation-fill-color)"
+                      d="M2 2l2 2M20 2l-2 2M2 20l2-2M20 20l-2-2"
+              />
+            </svg>
+          </button>
+
+          <button
+                  type="button"
+                  class="card__like-button"
+          >
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__image-wrapper">
+        <span class="card__label">Старт</span>
+        <img
+                src="./images/card-1.jpg"
+                alt="Начало обучения"
+                class="card__image card__image--blur"
+                loading="lazy"
+        />
+      </div>
+
+      <div class="card__content">
+        <h2 class="card__title">Первый шаг</h2>
+        <p class="card__text">
+          Было страшно начинать, но любопытство оказалось сильнее.
+        </p>
+
+        <div class="card__actions">
+          <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-label="Поставить лайк"
+          >
+            <!-- SVG сердца — INLINE, обязательно -->
+            <svg
+                    class="like-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                        class="core"
+                        fill="none"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+                <path
+                        class="main-body"
+                        fill="none"
+                        d="M12 20s-6-4-8.5-6.8C1.8 11.3 2.2 8.7 4.3 7.6c1.5-.8 3.6-.3 4.7 1.1l1 1.3 1-1.3c1.1-1.4 3.2-1.9 4.7-1.1 2.1 1.1 2.5 3.7.8 5.6C18 16 12 20 12 20z"
+                />
+                <path
+                        class="contour"
+                        fill="var(--contour-color)"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+              </g>
+
+              <path
+                      class="sparks"
+                      fill="var(--animation-fill-color)"
+                      d="M2 2l2 2M20 2l-2 2M2 20l2-2M20 20l-2-2"
+              />
+            </svg>
+          </button>
+
+          <button
+                  type="button"
+                  class="card__like-button"
+          >
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__image-wrapper">
+        <span class="card__label">Старт</span>
+        <img
+                src="./images/card-1.jpg"
+                alt="Начало обучения"
+                class="card__image card__image--blur"
+                loading="lazy"
+        />
+      </div>
+
+      <div class="card__content">
+        <h2 class="card__title">Первый шаг</h2>
+        <p class="card__text">
+          Было страшно начинать, но любопытство оказалось сильнее.
+        </p>
+
+        <div class="card__actions">
+          <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-label="Поставить лайк"
+          >
+            <!-- SVG сердца — INLINE, обязательно -->
+            <svg
+                    class="like-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                        class="core"
+                        fill="none"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+                <path
+                        class="main-body"
+                        fill="none"
+                        d="M12 20s-6-4-8.5-6.8C1.8 11.3 2.2 8.7 4.3 7.6c1.5-.8 3.6-.3 4.7 1.1l1 1.3 1-1.3c1.1-1.4 3.2-1.9 4.7-1.1 2.1 1.1 2.5 3.7.8 5.6C18 16 12 20 12 20z"
+                />
+                <path
+                        class="contour"
+                        fill="var(--contour-color)"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+              </g>
+
+              <path
+                      class="sparks"
+                      fill="var(--animation-fill-color)"
+                      d="M2 2l2 2M20 2l-2 2M2 20l2-2M20 20l-2-2"
+              />
+            </svg>
+          </button>
+
+          <button
+                  type="button"
+                  class="card__like-button"
+          >
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__image-wrapper">
+        <span class="card__label">Старт</span>
+        <img
+                src="./images/card-1.jpg"
+                alt="Начало обучения"
+                class="card__image card__image--blur"
+                loading="lazy"
+        />
+      </div>
+
+      <div class="card__content">
+        <h2 class="card__title">Первый шаг</h2>
+        <p class="card__text">
+          Было страшно начинать, но любопытство оказалось сильнее.
+        </p>
+
+        <div class="card__actions">
+          <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-label="Поставить лайк"
+          >
+            <!-- SVG сердца — INLINE, обязательно -->
+            <svg
+                    class="like-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                        class="core"
+                        fill="none"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+                <path
+                        class="main-body"
+                        fill="none"
+                        d="M12 20s-6-4-8.5-6.8C1.8 11.3 2.2 8.7 4.3 7.6c1.5-.8 3.6-.3 4.7 1.1l1 1.3 1-1.3c1.1-1.4 3.2-1.9 4.7-1.1 2.1 1.1 2.5 3.7.8 5.6C18 16 12 20 12 20z"
+                />
+                <path
+                        class="contour"
+                        fill="var(--contour-color)"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+              </g>
+
+              <path
+                      class="sparks"
+                      fill="var(--animation-fill-color)"
+                      d="M2 2l2 2M20 2l-2 2M2 20l2-2M20 20l-2-2"
+              />
+            </svg>
+          </button>
+
+          <button
+                  type="button"
+                  class="card__like-button"
+          >
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__image-wrapper">
+        <span class="card__label">Старт</span>
+        <img
+                src="./images/card-1.jpg"
+                alt="Начало обучения"
+                class="card__image card__image--blur"
+                loading="lazy"
+        />
+      </div>
+
+      <div class="card__content">
+        <h2 class="card__title">Первый шаг</h2>
+        <p class="card__text">
+          Было страшно начинать, но любопытство оказалось сильнее.
+        </p>
+
+        <div class="card__actions">
+          <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-label="Поставить лайк"
+          >
+            <!-- SVG сердца — INLINE, обязательно -->
+            <svg
+                    class="like-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                        class="core"
+                        fill="none"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+                <path
+                        class="main-body"
+                        fill="none"
+                        d="M12 20s-6-4-8.5-6.8C1.8 11.3 2.2 8.7 4.3 7.6c1.5-.8 3.6-.3 4.7 1.1l1 1.3 1-1.3c1.1-1.4 3.2-1.9 4.7-1.1 2.1 1.1 2.5 3.7.8 5.6C18 16 12 20 12 20z"
+                />
+                <path
+                        class="contour"
+                        fill="var(--contour-color)"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+              </g>
+
+              <path
+                      class="sparks"
+                      fill="var(--animation-fill-color)"
+                      d="M2 2l2 2M20 2l-2 2M2 20l2-2M20 20l-2-2"
+              />
+            </svg>
+          </button>
+
+          <button
+                  type="button"
+                  class="card__like-button"
+          >
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__image-wrapper">
+        <span class="card__label">Старт</span>
+        <img
+                src="./images/card-1.jpg"
+                alt="Начало обучения"
+                class="card__image card__image--blur"
+                loading="lazy"
+        />
+      </div>
+
+      <div class="card__content">
+        <h2 class="card__title">Первый шаг</h2>
+        <p class="card__text">
+          Было страшно начинать, но любопытство оказалось сильнее.
+        </p>
+
+        <div class="card__actions">
+          <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-label="Поставить лайк"
+          >
+            <!-- SVG сердца — INLINE, обязательно -->
+            <svg
+                    class="like-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                        class="core"
+                        fill="none"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+                <path
+                        class="main-body"
+                        fill="none"
+                        d="M12 20s-6-4-8.5-6.8C1.8 11.3 2.2 8.7 4.3 7.6c1.5-.8 3.6-.3 4.7 1.1l1 1.3 1-1.3c1.1-1.4 3.2-1.9 4.7-1.1 2.1 1.1 2.5 3.7.8 5.6C18 16 12 20 12 20z"
+                />
+                <path
+                        class="contour"
+                        fill="var(--contour-color)"
+                        d="M12 21s-6.7-4.3-9.3-7.4C.5 11.2 1 7.8 3.6 6.3 5.4 5.3 7.8 5.8 9 7.4 10.2 5.8 12.6 5.3 14.4 6.3c2.6 1.5 3.1 4.9.9 7.3C18.7 16.7 12 21 12 21z"
+                />
+              </g>
+
+              <path
+                      class="sparks"
+                      fill="var(--animation-fill-color)"
+                      d="M2 2l2 2M20 2l-2 2M2 20l2-2M20 20l-2-2"
+              />
+            </svg>
+          </button>
+
+          <button
+                  type="button"
+                  class="card__like-button"
+          >
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===== КАРТОЧКИ 2–8 ===== -->
+    <!-- Клонируешь article.card и меняешь:
+         - картинку
+         - текст
+         - label
+         - фильтр -->
+  </section>
+</main>
+
+<!-- ===== DIALOG ===== -->
+<dialog class="dialog">
+  <div class="dialog__content">
+    <svg
+            width="40"
+            height="40"
+            aria-hidden="true"
+    >
+      <use href="./svg/diskette.svg#diskette"></use>
+    </svg>
+    <p class="dialog__text">Сохранено на память</p>
+  </div>
+
+  <button type="button" class="dialog__button">
+    <span class="button__text">ОК</span>
+  </button>
+</dialog>
+
+<!-- ===== SCRIPT ===== -->
+<script src="./scripts/like.js"></script>
+</body>
 </html>

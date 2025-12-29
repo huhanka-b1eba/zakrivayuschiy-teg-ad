@@ -51,3 +51,9 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+
+.page {
+  font-family: var(--main-font);
+  font-variation-settings: "wght" var(--text-weight);
+}
